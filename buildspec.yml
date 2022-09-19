@@ -1,0 +1,13 @@
+version: 2.0
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  build:
+    commands:
+      - mvn clean install
+artifacts:
+  files:
+    - target/*.jar
+    - appspec.yml
